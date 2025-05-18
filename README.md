@@ -1,7 +1,7 @@
 
 # 🌐 Language Detection using Natural Language Processing (NLP)
 
-A simple machine learning project to detect the language of a given text input. This project uses text preprocessing, a CountVectorizer, and a Multinomial Naive Bayes classifier to predict the language. A web application is built using Flask to interact with the model.
+A machine learning project to detect the language of a given text input. This project uses text preprocessing, a CountVectorizer, and a Multinomial Naive Bayes classifier to predict the language. A web application is built using Flask to interact with the model.
 
 ---
 
