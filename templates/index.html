@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Predictor</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='eye.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Detection</h1>
+        <form action="/predict" method="POST">
+            <textarea name="text" placeholder="Enter your text here" required></textarea>
+            <button type="submit">Predict Language</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            <strong>Input Text:</strong> {{ user_input }}<br>
+            <strong>Predicted Language:</strong> {{ prediction }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
